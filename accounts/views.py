@@ -26,6 +26,6 @@ def userLogin(request):
                 "status":True,
                 "message":"Login Succesful",
                 "keys": token_data   
-            }
+            },status=status.HTTP_200_OK
         )
             
