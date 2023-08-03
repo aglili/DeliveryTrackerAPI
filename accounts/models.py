@@ -8,7 +8,9 @@ class CustomUser(AbstractUser):
     roles = [
         ('user','User'),
         ('delivery_personel','Delivery Personel'),
-        ('manager','Manager')
+        ('manager','Manager'),
+        ("regional_manager","Regional Manager"),
+        ("president","President")
     ]
 
     id = models.UUIDField(primary_key=True,default=uuid4)
